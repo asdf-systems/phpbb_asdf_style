@@ -1,0 +1,18 @@
+a {
+	color: $ci_lightgray !important;
+	&:before {
+		// display: inline-block;
+		display: none;
+		background-image: url('/img/statics.png');
+		background-position: -1*$sprite_arrow_active_position_x -1*$sprite_arrow_right;
+		width: $sprite_arrow_lr_width;
+		height: $sprite_arrow_lr_height;
+		margin-bottom: 2px;
+		content: '';
+		margin-right: $spacing;
+	}
+	&:hover {
+		color: $ci_orange !important;;
+		text-decoration: none;
+	}
+}
