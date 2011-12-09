@@ -104,7 +104,7 @@ body {
 		padding: 0;
 		margin: 0;
 	}
-	> hr {
+	hr {
 		display: none;
 	}
 	.topic-actions {
@@ -228,6 +228,49 @@ body {
 			border-bottom: 1px solid $tmp;
 			margin-top: 0;
 			padding-bottom: 6px;
+		}
+	}
+	#tabs {
+		li, .activetab {
+			border: 0;
+			a, span {
+				border: 0;
+				color: $ci_orange !important;
+				&:hover {
+					color: $ci_lightgray !important;
+				}
+			}
+		}
+	}
+	fieldset, #message-box, #smiley-box, #format-buttons, #colour_palette {
+		textarea, input {
+			@include small-text-style;
+			color: $ci_lightgray;
+			background-color: transparent;
+			border-color: $ci_lightgray;
+		}
+		textarea {
+			border-color: $ci_orange;
+		}
+	}
+	.panel {
+		background-color: transparent;
+		h3 {
+			border: 0;
+			@include headline-text-style;
+			color: $ci_white !important;
+			a {
+				color: $ci_white !important;
+				@include headline-text-style;
+			}
+			@include box-active-style;
+			&:after {
+				margin-top: 0;
+			}
+		}
+		color: $ci_lightgray;
+		label {
+			color: $ci_lightgray;
 		}
 	}
 }
