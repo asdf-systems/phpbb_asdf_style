@@ -1,0 +1,327 @@
+@import "common.css";
+@import "links.css";
+@import "content.css";
+@import "buttons.css";
+@import "cp.css";
+@import "forms.css";
+@import "tweaks.css";
+@import "colours.css";
+
+@import "_config.scss";
+@import "_fonts.scss";
+@import "_bars.scss";
+@import "_links.scss";
+
+html, body {
+	@include normal-text-style;
+	background-color: $ci_background;
+	color: $ci_lightgray;
+}
+
+body {
+	position: relative;
+	padding-right: 180px;
+}
+
+#asdfad {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 180px;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	iframe {
+		width: 100%;
+		height: 100%;
+		border: 0;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+#logo {
+	img {
+		margin-top: 10px;
+	}
+}
+
+#search-box {
+	fieldset {
+		input {
+			@include small-text-style;
+			color: $ci_lightgray;
+			background-color: transparent;
+			border-color: $ci_lightgray;
+		}
+		a {
+			@include small-text-style;
+		}
+	}
+}
+
+#page-header {
+	@include opener-text-style;
+	.headerbar {
+		@include box-style;
+		h1 {
+			@include headline-text-style;
+			color: $ci_white;
+		}
+	}
+	.navbar {
+		@include small-text-style;
+		@include box-style;
+		padding: 0;
+		ul {
+			border: 0;
+			float: none !important;
+			> li {
+				padding: 0 $padding_horizontal;
+				float: none !important;
+				display: inline-block;
+			}
+			.corners-top, .corners-bottom {
+				display: none !important;
+			}
+			&.navlinks {
+				@include box-active-style;
+				&:after {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+}
+#page-body {
+	@include small-text-style;
+	color: $ci_lightgray;
+	> p, > ul.linklist {
+		margin-left: $padding_horizontal;
+		margin-right: $padding_horizontal;
+	}
+	.link-list {
+		@include normal-text-style;
+	}
+	.forabg, .forumbg {
+		@include box-style;
+		padding: 0;
+		.corners-top, .corners-bottom {
+			display: none !important;
+		}
+	}
+	> form {
+		padding: $padding_vertical $padding_horizontal;
+		@include box-style;
+		> fieldset {
+			label, input {
+				@include small-text-style;
+				color: $ci_lightgray;
+			}
+			input {
+				background-color: transparent;
+				border-color: $ci_lightgray;
+			}
+		}
+		> h3 {
+			border: 0;
+			margin: 0 !important;
+			color: $ci_white;
+			@include small-text-style;
+			font-weight: bold;
+			padding-left: $padding_horizontal;
+		}
+	}
+	> form#jumpbox {
+		background-image: none;
+		background-color: transparent;
+		border: 0;
+		padding: 0;
+		margin: 0;
+	}
+	hr {
+		display: none;
+	}
+	.topic-actions {
+		// background-color: $ci_orange;
+		font-weight: bold;
+		border: 0;
+		padding: 0 $padding_horizontal;
+		@include small-text-style;
+		color: $ci_white;
+		a {
+			@include small-text-style;
+			color: $ci_white;
+		}
+	}
+	> h3 {
+		border: 0;
+		margin: 0 !important;
+		color: $ci_white !important;
+		background-color: $ci_turquoise;
+		@include opener-text-style;
+		font-weight: bold;
+		padding-left: $padding_horizontal;
+		a {
+			color: $ci_white !important;
+		}
+	}
+	> h3 + p, > form > h3 + p {
+		color: $ci_lightgray;
+		@include small-text-style;
+		@include box-style;
+		padding: $padding_vertical $padding_horizontal;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	ul.topiclist {
+		li {
+			background-color: transparent;
+			&:hover {
+				background-color: transparent;
+			}
+			&.header {
+				background-color: $ci_orange;
+				> *:first-child {
+					padding-left: $padding_horizontal;
+				}
+				dt, dd, dt > a {
+					@include opener-text-style;
+					line-height: $opener_size;
+					color: $ci_white !important;
+					> a {
+						@include opener-text-style;
+						font-weight: bold;
+						line-height: $opener_size;
+						color: $ci_white !important;
+						&:hover {
+							text-decoration: none;
+						}
+					}
+				}
+			}
+			border: 0;
+		}
+		background-color: transparent;
+		dd {
+			border: 0;
+			color: $ci_lightgray !important;
+		}
+		&.forums, &.topics {
+			color: $ci_lightgray !important;
+			li {
+				color: inherit;
+			}
+		}
+	}
+	> h2 {
+		display: none;
+		@include opener-text-style;
+		background-color: $ci_orange;
+		padding: 0 $padding_horizontal;
+		color: $ci_white !important;
+		a {
+			@include opener-text-style;
+			color: inherit !important;
+		}
+	}
+	.post {
+		@include box-style;
+		@include box-active-style;
+		padding: 0;
+		> .inner {
+			margin: 0 $padding_horizontal;
+			margin-right: 0;
+		}
+		.postbody {
+			h3 {
+				@include headline-text-style;
+				color: $ci_white !important;
+				a {
+					color: $ci_white !important;
+					@include headline-text-style;
+				}
+			}
+			color: $ci_lightgray;
+		}
+		p.author {
+			@include box-active-style;
+			&:after {
+				margin-top: $padding_vertical;
+			}
+		}
+		.content {
+			color: $ci_lightgray;
+		}
+		.corners-top {
+			display: none;
+		}
+		.postprofile {
+			color: $ci_lightgray;
+			> dd {
+				color: inherit;
+				> strong {
+					color: inherit;
+				}
+			}
+			$tmp: $ci_orange;
+			border-left: 1px solid $tmp;
+			border-bottom: 1px solid $tmp;
+			margin-top: 0;
+			padding-bottom: 6px;
+		}
+	}
+	#tabs {
+		li, .activetab {
+			border: 0;
+			a, span {
+				border: 0;
+				color: $ci_orange !important;
+				&:hover {
+					color: $ci_lightgray !important;
+				}
+			}
+		}
+	}
+	fieldset, #message-box, #smiley-box, #format-buttons, #colour_palette {
+		textarea, input {
+			@include small-text-style;
+			color: $ci_lightgray;
+			background-color: transparent;
+			border-color: $ci_lightgray;
+		}
+		textarea {
+			border-color: $ci_orange;
+		}
+	}
+	.panel {
+		background-color: transparent;
+		h3 {
+			border: 0;
+			@include headline-text-style;
+			color: $ci_white !important;
+			a {
+				color: $ci_white !important;
+				@include headline-text-style;
+			}
+			@include box-active-style;
+			&:after {
+				margin-top: 0;
+			}
+		}
+		color: $ci_lightgray;
+		label {
+			color: $ci_lightgray;
+		}
+	}
+}
+
+#page-footer {
+	@include small-text-style;
+	.navbar {
+		@include box-style;
+	}
+}
+
