@@ -60,13 +60,51 @@ body {
 }
 
 /* line 26, ../sass/stylesheet.scss */
-#ad {
+#asdfad {
   position: fixed;
   top: 0;
   right: 0;
+  width: 180px;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+/* line 35, ../sass/stylesheet.scss */
+#asdfad iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  margin: 0;
 }
 
-/* line 32, ../sass/stylesheet.scss */
+/* line 45, ../sass/stylesheet.scss */
+#logo img {
+  margin-top: 10px;
+}
+
+/* line 52, ../sass/stylesheet.scss */
+#search-box fieldset input {
+  font-family: "Ubuntu";
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 0.025em;
+  line-height: 17.5px;
+  color: #c2c3ba;
+  background-color: transparent;
+  border-color: #c2c3ba;
+}
+/* line 58, ../sass/stylesheet.scss */
+#search-box fieldset a {
+  font-family: "Ubuntu";
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 0.025em;
+  line-height: 17.5px;
+}
+
+/* line 64, ../sass/stylesheet.scss */
 #page-header {
   font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
   font-size-adjust: 0.49;
@@ -76,7 +114,7 @@ body {
   letter-spacing: 0.025em;
   line-height: 26px;
 }
-/* line 34, ../sass/stylesheet.scss */
+/* line 66, ../sass/stylesheet.scss */
 #page-header .headerbar {
   margin-bottom: 5px;
   border-top: 1px solid #2d2c29;
@@ -89,7 +127,7 @@ body {
   background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
   background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
 }
-/* line 36, ../sass/stylesheet.scss */
+/* line 68, ../sass/stylesheet.scss */
 #page-header .headerbar h1 {
   font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
   font-size-adjust: 0.49;
@@ -100,7 +138,7 @@ body {
   line-height: 1em;
   color: #ececec;
 }
-/* line 41, ../sass/stylesheet.scss */
+/* line 73, ../sass/stylesheet.scss */
 #page-header .navbar {
   font-family: "Ubuntu";
   font-weight: 400;
@@ -119,18 +157,18 @@ body {
   background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
   padding: 0;
 }
-/* line 45, ../sass/stylesheet.scss */
+/* line 77, ../sass/stylesheet.scss */
 #page-header .navbar ul {
   border: 0;
   float: none !important;
 }
-/* line 48, ../sass/stylesheet.scss */
+/* line 80, ../sass/stylesheet.scss */
 #page-header .navbar ul > li {
   padding: 0 20px;
   float: none !important;
   display: inline-block;
 }
-/* line 53, ../sass/stylesheet.scss */
+/* line 85, ../sass/stylesheet.scss */
 #page-header .navbar ul .corners-top, #page-header .navbar ul .corners-bottom {
   display: none !important;
 }
@@ -148,12 +186,12 @@ body {
   background-image: linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
   content: '';
 }
-/* line 58, ../sass/stylesheet.scss */
+/* line 90, ../sass/stylesheet.scss */
 #page-header .navbar ul.navlinks:after {
   margin-top: 0;
 }
 
-/* line 65, ../sass/stylesheet.scss */
+/* line 97, ../sass/stylesheet.scss */
 #page-body {
   font-family: "Ubuntu";
   font-weight: 400;
@@ -162,7 +200,12 @@ body {
   line-height: 17.5px;
   color: #c2c3ba;
 }
-/* line 68, ../sass/stylesheet.scss */
+/* line 100, ../sass/stylesheet.scss */
+#page-body > p, #page-body > ul.linklist {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/* line 104, ../sass/stylesheet.scss */
 #page-body .link-list {
   font-family: "Ubuntu";
   font-weight: 400;
@@ -170,7 +213,7 @@ body {
   letter-spacing: 0.025em;
   line-height: 26px;
 }
-/* line 71, ../sass/stylesheet.scss */
+/* line 107, ../sass/stylesheet.scss */
 #page-body .forabg, #page-body .forumbg {
   margin-bottom: 5px;
   border-top: 1px solid #2d2c29;
@@ -184,11 +227,11 @@ body {
   background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
   padding: 0;
 }
-/* line 74, ../sass/stylesheet.scss */
+/* line 110, ../sass/stylesheet.scss */
 #page-body .forabg .corners-top, #page-body .forabg .corners-bottom, #page-body .forumbg .corners-top, #page-body .forumbg .corners-bottom {
   display: none !important;
 }
-/* line 78, ../sass/stylesheet.scss */
+/* line 114, ../sass/stylesheet.scss */
 #page-body > form {
   padding: 10px 20px;
   margin-bottom: 5px;
@@ -202,7 +245,7 @@ body {
   background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
   background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
 }
-/* line 82, ../sass/stylesheet.scss */
+/* line 118, ../sass/stylesheet.scss */
 #page-body > form > fieldset label, #page-body > form > fieldset input {
   font-family: "Ubuntu";
   font-weight: 400;
@@ -211,12 +254,12 @@ body {
   line-height: 17.5px;
   color: #c2c3ba;
 }
-/* line 86, ../sass/stylesheet.scss */
+/* line 122, ../sass/stylesheet.scss */
 #page-body > form > fieldset input {
   background-color: transparent;
   border-color: #c2c3ba;
 }
-/* line 91, ../sass/stylesheet.scss */
+/* line 127, ../sass/stylesheet.scss */
 #page-body > form > h3 {
   border: 0;
   margin: 0 !important;
@@ -229,7 +272,7 @@ body {
   font-weight: bold;
   padding-left: 20px;
 }
-/* line 100, ../sass/stylesheet.scss */
+/* line 136, ../sass/stylesheet.scss */
 #page-body > form#jumpbox {
   background-image: none;
   background-color: transparent;
@@ -237,11 +280,11 @@ body {
   padding: 0;
   margin: 0;
 }
-/* line 107, ../sass/stylesheet.scss */
+/* line 143, ../sass/stylesheet.scss */
 #page-body hr {
   display: none;
 }
-/* line 110, ../sass/stylesheet.scss */
+/* line 146, ../sass/stylesheet.scss */
 #page-body .topic-actions {
   font-weight: bold;
   border: 0;
@@ -253,20 +296,20 @@ body {
   line-height: 17.5px;
   color: #ececec;
 }
-/* line 117, ../sass/stylesheet.scss */
+/* line 153, ../sass/stylesheet.scss */
 #page-body .topic-actions a {
   font-family: "Ubuntu";
   font-weight: 400;
   font-size: 13px;
   letter-spacing: 0.025em;
   line-height: 17.5px;
-  color: inherit !important;
+  color: #ececec;
 }
-/* line 122, ../sass/stylesheet.scss */
+/* line 158, ../sass/stylesheet.scss */
 #page-body > h3 {
   border: 0;
   margin: 0 !important;
-  color: #ececec;
+  color: #ececec !important;
   background-color: #008692;
   font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
   font-size-adjust: 0.49;
@@ -278,7 +321,11 @@ body {
   font-weight: bold;
   padding-left: 20px;
 }
-/* line 131, ../sass/stylesheet.scss */
+/* line 166, ../sass/stylesheet.scss */
+#page-body > h3 a {
+  color: #ececec !important;
+}
+/* line 170, ../sass/stylesheet.scss */
 #page-body > h3 + p, #page-body > form > h3 + p {
   color: #c2c3ba;
   font-family: "Ubuntu";
@@ -297,29 +344,31 @@ body {
   background-image: -ms-linear-gradient(top left, #1c1c19, #232320, #1c1c19);
   background-image: linear-gradient(top left, #1c1c19, #232320, #1c1c19);
   padding: 10px 20px;
+  margin-left: 0;
+  margin-right: 0;
 }
-/* line 138, ../sass/stylesheet.scss */
+/* line 179, ../sass/stylesheet.scss */
 #page-body ul.topiclist {
   background-color: transparent;
 }
-/* line 139, ../sass/stylesheet.scss */
+/* line 180, ../sass/stylesheet.scss */
 #page-body ul.topiclist li {
   background-color: transparent;
   border: 0;
 }
-/* line 141, ../sass/stylesheet.scss */
+/* line 182, ../sass/stylesheet.scss */
 #page-body ul.topiclist li:hover {
   background-color: transparent;
 }
-/* line 144, ../sass/stylesheet.scss */
+/* line 185, ../sass/stylesheet.scss */
 #page-body ul.topiclist li.header {
   background-color: #fba22b;
 }
-/* line 146, ../sass/stylesheet.scss */
+/* line 187, ../sass/stylesheet.scss */
 #page-body ul.topiclist li.header > *:first-child {
   padding-left: 20px;
 }
-/* line 149, ../sass/stylesheet.scss */
+/* line 190, ../sass/stylesheet.scss */
 #page-body ul.topiclist li.header dt, #page-body ul.topiclist li.header dd, #page-body ul.topiclist li.header dt > a {
   font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
   font-size-adjust: 0.49;
@@ -328,9 +377,10 @@ body {
   font-size: 16px;
   letter-spacing: 0.025em;
   line-height: 26px;
+  line-height: 16px;
   color: #ececec !important;
 }
-/* line 152, ../sass/stylesheet.scss */
+/* line 194, ../sass/stylesheet.scss */
 #page-body ul.topiclist li.header dt > a, #page-body ul.topiclist li.header dd > a, #page-body ul.topiclist li.header dt > a > a {
   font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
   font-size-adjust: 0.49;
@@ -340,26 +390,27 @@ body {
   letter-spacing: 0.025em;
   line-height: 26px;
   font-weight: bold;
+  line-height: 16px;
   color: #ececec !important;
 }
-/* line 156, ../sass/stylesheet.scss */
+/* line 199, ../sass/stylesheet.scss */
 #page-body ul.topiclist li.header dt > a:hover, #page-body ul.topiclist li.header dd > a:hover, #page-body ul.topiclist li.header dt > a > a:hover {
   text-decoration: none;
 }
-/* line 165, ../sass/stylesheet.scss */
+/* line 208, ../sass/stylesheet.scss */
 #page-body ul.topiclist dd {
   border: 0;
   color: #c2c3ba !important;
 }
-/* line 169, ../sass/stylesheet.scss */
+/* line 212, ../sass/stylesheet.scss */
 #page-body ul.topiclist.forums, #page-body ul.topiclist.topics {
   color: #c2c3ba !important;
 }
-/* line 171, ../sass/stylesheet.scss */
+/* line 214, ../sass/stylesheet.scss */
 #page-body ul.topiclist.forums li, #page-body ul.topiclist.topics li {
   color: inherit;
 }
-/* line 176, ../sass/stylesheet.scss */
+/* line 219, ../sass/stylesheet.scss */
 #page-body > h2 {
   display: none;
   font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
@@ -373,7 +424,7 @@ body {
   padding: 0 20px;
   color: #ececec !important;
 }
-/* line 182, ../sass/stylesheet.scss */
+/* line 225, ../sass/stylesheet.scss */
 #page-body > h2 a {
   font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
   font-size-adjust: 0.49;
@@ -384,7 +435,7 @@ body {
   line-height: 26px;
   color: inherit !important;
 }
-/* line 187, ../sass/stylesheet.scss */
+/* line 230, ../sass/stylesheet.scss */
 #page-body .post {
   margin-bottom: 5px;
   border-top: 1px solid #2d2c29;
@@ -412,16 +463,16 @@ body {
   background-image: linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
   content: '';
 }
-/* line 191, ../sass/stylesheet.scss */
+/* line 234, ../sass/stylesheet.scss */
 #page-body .post > .inner {
   margin: 0 20px;
   margin-right: 0;
 }
-/* line 195, ../sass/stylesheet.scss */
+/* line 238, ../sass/stylesheet.scss */
 #page-body .post .postbody {
   color: #c2c3ba;
 }
-/* line 196, ../sass/stylesheet.scss */
+/* line 239, ../sass/stylesheet.scss */
 #page-body .post .postbody h3 {
   font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
   font-size-adjust: 0.49;
@@ -432,7 +483,7 @@ body {
   line-height: 1em;
   color: #ececec !important;
 }
-/* line 199, ../sass/stylesheet.scss */
+/* line 242, ../sass/stylesheet.scss */
 #page-body .post .postbody h3 a {
   color: #ececec !important;
   font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
@@ -457,19 +508,19 @@ body {
   background-image: linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
   content: '';
 }
-/* line 208, ../sass/stylesheet.scss */
+/* line 251, ../sass/stylesheet.scss */
 #page-body .post p.author:after {
   margin-top: 10px;
 }
-/* line 212, ../sass/stylesheet.scss */
+/* line 255, ../sass/stylesheet.scss */
 #page-body .post .content {
   color: #c2c3ba;
 }
-/* line 215, ../sass/stylesheet.scss */
+/* line 258, ../sass/stylesheet.scss */
 #page-body .post .corners-top {
   display: none;
 }
-/* line 218, ../sass/stylesheet.scss */
+/* line 261, ../sass/stylesheet.scss */
 #page-body .post .postprofile {
   color: #c2c3ba;
   border-left: 1px solid #fba22b;
@@ -477,28 +528,28 @@ body {
   margin-top: 0;
   padding-bottom: 6px;
 }
-/* line 220, ../sass/stylesheet.scss */
+/* line 263, ../sass/stylesheet.scss */
 #page-body .post .postprofile > dd {
   color: inherit;
 }
-/* line 222, ../sass/stylesheet.scss */
+/* line 265, ../sass/stylesheet.scss */
 #page-body .post .postprofile > dd > strong {
   color: inherit;
 }
-/* line 234, ../sass/stylesheet.scss */
+/* line 277, ../sass/stylesheet.scss */
 #page-body #tabs li, #page-body #tabs .activetab {
   border: 0;
 }
-/* line 236, ../sass/stylesheet.scss */
+/* line 279, ../sass/stylesheet.scss */
 #page-body #tabs li a, #page-body #tabs li span, #page-body #tabs .activetab a, #page-body #tabs .activetab span {
   border: 0;
   color: #fba22b !important;
 }
-/* line 239, ../sass/stylesheet.scss */
+/* line 282, ../sass/stylesheet.scss */
 #page-body #tabs li a:hover, #page-body #tabs li span:hover, #page-body #tabs .activetab a:hover, #page-body #tabs .activetab span:hover {
   color: #c2c3ba !important;
 }
-/* line 246, ../sass/stylesheet.scss */
+/* line 289, ../sass/stylesheet.scss */
 #page-body fieldset textarea, #page-body fieldset input, #page-body #message-box textarea, #page-body #message-box input, #page-body #smiley-box textarea, #page-body #smiley-box input, #page-body #format-buttons textarea, #page-body #format-buttons input, #page-body #colour_palette textarea, #page-body #colour_palette input {
   font-family: "Ubuntu";
   font-weight: 400;
@@ -509,16 +560,16 @@ body {
   background-color: transparent;
   border-color: #c2c3ba;
 }
-/* line 252, ../sass/stylesheet.scss */
+/* line 295, ../sass/stylesheet.scss */
 #page-body fieldset textarea, #page-body #message-box textarea, #page-body #smiley-box textarea, #page-body #format-buttons textarea, #page-body #colour_palette textarea {
   border-color: #fba22b;
 }
-/* line 256, ../sass/stylesheet.scss */
+/* line 299, ../sass/stylesheet.scss */
 #page-body .panel {
   background-color: transparent;
   color: #c2c3ba;
 }
-/* line 258, ../sass/stylesheet.scss */
+/* line 301, ../sass/stylesheet.scss */
 #page-body .panel h3 {
   border: 0;
   font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
@@ -530,7 +581,7 @@ body {
   line-height: 1em;
   color: #ececec !important;
 }
-/* line 262, ../sass/stylesheet.scss */
+/* line 305, ../sass/stylesheet.scss */
 #page-body .panel h3 a {
   color: #ececec !important;
   font-family: "FS Joey Web Bold", Helvetica, Arial, Verdana , sans-serif;
@@ -555,16 +606,16 @@ body {
   background-image: linear-gradient(left, #bc6d04, #fbad44, #bc6d04);
   content: '';
 }
-/* line 267, ../sass/stylesheet.scss */
+/* line 310, ../sass/stylesheet.scss */
 #page-body .panel h3:after {
   margin-top: 0;
 }
-/* line 272, ../sass/stylesheet.scss */
+/* line 315, ../sass/stylesheet.scss */
 #page-body .panel label {
   color: #c2c3ba;
 }
 
-/* line 278, ../sass/stylesheet.scss */
+/* line 321, ../sass/stylesheet.scss */
 #page-footer {
   font-family: "Ubuntu";
   font-weight: 400;
@@ -572,7 +623,7 @@ body {
   letter-spacing: 0.025em;
   line-height: 17.5px;
 }
-/* line 280, ../sass/stylesheet.scss */
+/* line 323, ../sass/stylesheet.scss */
 #page-footer .navbar {
   margin-bottom: 5px;
   border-top: 1px solid #2d2c29;
